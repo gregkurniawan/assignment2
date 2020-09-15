@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Continue</title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <a href= "index.html">Previous Page</a>
+    	<form "/action_page.php">
+    		<h2>Please fill out the following:</h2><hr><br>
+            UserName: <input type="text" name="name"><br>
+            Password: <input type="password" name="password"><br>
+            <h4>Special Instructions:</h4>
+            <input type="text" name="special"><br>
+            <h4>Enter today's date:</h4>
+         <input type="date" name="date"/>
+         <hr><br>
+            <table>
+            	<tr>
+                	<td valign="top">
+       					Payment Method:<br>
+            				<input type="radio" name="payment" value="cash" checked>Cash<br>
+                			<input type="radio" name="payment" value="credit">Credit<br>
+                			<input type="radio" name="payment" value="debit">Debit<br>
+                			<input type="radio" name="payment" value="check">Check<br>
+       				</td>
+                    <td valign="top">
+        				Select meal:<br>
+        					<label class ="container">Dine-In
+            					<input type="checkbox">
+            					<span class="checkmark"></span>
+        					</label><br>
+        					<label class ="container">Delivery
+            					<input type="checkbox">
+            					<span class="checkmark"></span>
+        					</label><br>
+        					<label class ="container">Takeout
+            					<input type="checkbox">
+            					<span class="checkmark"></span>
+        					</label><br>
+                    </td>
+                    <td valign="top">
+       					Select Beverage:<br>
+        					<select name="beverage">
+                           		<option value="none">Not Selected</option>
+        						<option value="member">Member</option>
+                    			<option value="nonmember">Not a Member</option>
+                    			<option value="guest">First Time Guest</option>
+                    			<option value="return">Not First Time</option>
+        					</select><br>
+       				</td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit">   <input type="reset">
+    	</form>
+    </body>
+</html>
